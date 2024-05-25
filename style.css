@@ -1,0 +1,144 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+main {
+    width: 420px;
+    position: relative;
+    text-align: center;
+}
+
+.road-container {
+    position: absolute;
+    width: 2900px;
+    height: 150px;
+    top: 350px;
+    left: 0;
+    background: #33312b;
+    top: 530px;
+    animation: road 1s linear infinite;
+}
+
+.road-sideline {
+    position: absolute;
+    width: 2900px;
+    height: 20px;
+    top: 120px;
+    left: 0;
+    background-color: white;
+}
+
+.road-middle-line {
+    position: absolute;
+    width: 2900px;
+    height: 10px;
+    top: 35px;
+    left: 0;
+    background: repeating-linear-gradient(
+        to right,
+        #33312b 5% 15%,
+        white 15% 20%
+    );
+}
+
+@keyframes road {
+    from {
+        left: 0;
+    }
+    to {
+        left: -51%;
+    }
+}
+
+.car-body {
+    border-radius: 10px;
+    border: 2px solid black;
+    background: rgb(150, 32, 32);
+    height: 200px;
+    width: 30%;
+    border-radius: 12px;
+    margin-top: 20px; 
+}
+
+.headlight {
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    top: 50vh;
+    right: 75vh;
+    background: rgb(119, 139, 26);
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.windows {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+    top: 10px;
+}
+
+.window {
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;
+    background: rgb(192, 193, 196);
+    border: 2px solid black;
+}
+
+.wheels {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+    top: 60px;
+}
+
+.wheel {
+    width: 85px;
+    height: 75px;
+    background: rgb(72, 68, 68);
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.cylinder {
+    width: 55px;
+    height: 55px;
+    background: rgb(114, 113, 113);
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 10px;
+    right: -13px;
+}
+
+
+.button-container {
+    margin-bottom: 250px; 
+}
+
+.update-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.update-button:hover {
+    background-color: #0056b3;
+}
+
+
